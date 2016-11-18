@@ -1,0 +1,12 @@
+{
+  "files": {
+    "scss/default.scss": {
+      "output": "css/default.css",
+      "format": "scss"
+    },
+  },
+
+  "autowatch": [
+    "scss/layout.scss",
+  ]
+}
