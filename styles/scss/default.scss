@@ -130,15 +130,25 @@ body {
 }
 
 #twitter {
+  div {
+    height: 100%;
+  }
   div.span6 {
     text-align: center;
   }
   div.span4 {
+    align-content: stretch;
+    display: flex;
+    flex-flow: column;
     ul {
+      align-self: auto;
       display: flex;
       flex-wrap: wrap;
+      height: 100%;
       justify-content: space-around;
+      align-items: center;
       list-style: none;
+      padding: 0;
       width: 100%;
     }
   }
@@ -152,17 +162,30 @@ body {
 
 #partner {
   div.include {
+    align-content: stretch;
     display: flex;
-    justify-content: space-around;
+    flex-flow: column;
+    height: 100%;
     .row {
       width: 100%;
+      height: 100%;
     }
     ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-items: center;
+      height: 100%;
       list-style: none;
       width: 100%;
+    }
+    img {
+      display: block;
+      max-width: 80px !important;
+      max-height: 80px !important;
+      width: auto;
+      height: auto;
+      margin: 5px 15px;
     }
   }
 }
