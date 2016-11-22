@@ -3,54 +3,174 @@
  * Author: Florestan Bredow <florestan.bredow@supagro.fr>
  * under GNU General Public License
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000312}}
+* {
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000314}}
 body {
   background: white;
   display: flex;
   flex-direction: column; }
 
-#header, #description, #menu, #news, #twitter, #gallery {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000320}}
+#header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
   height: 300px;
-  max-height: 300px;
-  min-height: 300px;
-  overflow: hidden;
-  font-size: 300%; }
+  overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000320}}
+    #header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
+      height: auto;
+      min-height: 300px;
+      max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000327}}
+      #header iframe, #description iframe, #menu iframe, #news iframe, #twitter iframe, #gallery iframe, #partner iframe, footer iframe {
+        width: 100%; } }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000333}}
 #header {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  font-size: 300%;
   justify-content: space-around; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000342}}
 #description {
   background: #5b97d3;
-  color: white; }
+  font-size: calc(16px + 1vw);
+  color: white;
+  padding: 0 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000347}}
+  #description div.span6:nth-child(2) {
+    text-align: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000352}}
 .dateHeader {
   color: #5b97d3; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000358}}
 #menu div.include {
-  width: 100%;
-  height: 100%;
-  display: flex;
   align-items: stretch;
-  justify-content: space-around; }
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000364}}
   #menu div.include ul {
     display: flex;
-    list-style: none;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%; }
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000373}}
     #menu div.include ul li {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
+      flex-shrink: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000376}}
+      #menu div.include ul li a {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000383}}
+      #menu div.include ul li a:hover {
+        transform: scale(1.1);
+        text-decoration: none;
+        animation: IconHover 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\0000392}}
 #menu .icon {
-  width: 100px;
-  height: 100px;
-  padding-left: 100px;
-  background-image: url("../images/icon.png");
   background-repeat: no-repeat;
-  display: block; }
+  display: block;
+  height: 110px;
+  padding-left: 110px;
+  width: 110px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003100}}
+#menu .icon-inscriptions {
+  background-image: url("../images/icon-inscriptions.png"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003104}}
+#menu .icon-programme {
+  background-image: url("../images/icon-programme.png"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003108}}
+#menu .icon-presentation {
+  background-image: url("../images/icon-presentation.png"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003112}}
+#menu .icon-ressources {
+  background-image: url("../images/icon-ressources.png"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003117}}
+#news {
+  color: white;
+  font-size: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003120}}
+  #news span.date {
+    margin-right: 0;
+    margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003124}}
+  #news h2 {
+    font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003127}}
+  #news .background-image {
+    background-size: cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003133}}
+#twitter div.span6 {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003137}}
+#twitter div.span4 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003148}}
+#gallery .background-image {
+  background-size: cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003154}}
+#partner div.include {
+  display: flex;
+  justify-content: space-around; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003157}}
+  #partner div.include .row {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003160}}
+  #partner div.include ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003170}}
+footer {
+  background: #58585a;
+  color: white;
+  padding: 0 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003174}}
+  footer a {
+    color: #cbde43; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003177}}
+  footer div.col-xs-6 {
+    width: 100%;
+    padding: 0 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003181}}
+  footer textarea {
+    height: 50px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bredow\/Public\/yeswiki-moustic\/themes\/moustic\/styles\/scss\/default\.scss}line{font-family:\00003186}}
+#notice {
+  text-align: center; }
+
+@keyframes IconHover {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
 
 /*# sourceMappingURL=default.css.map */
