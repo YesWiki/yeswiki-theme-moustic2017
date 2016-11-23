@@ -231,12 +231,46 @@ footer {
   a {
     color: $moustic-green;
   }
-  div.col-xs-6 {
-    width: 100%;
-    padding: 0 5%;
+  div.span4:nth-child(2) {
+    div.col-xs-6 {
+      width: 100%;
+      padding: 0 5%;
+    }
   }
+
+  div.span4:nth-child(3) {
+    text-align: right;
+
+  }
+
   textarea {
     height: 50px !important;
+  }
+
+  div.include {
+    height: 100%;
+  }
+
+  div.row {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    div.span4 {
+      min-width: 300px;
+    }
+    @media screen and (max-width: $media-witdh) {
+      div.span4 {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+        figure.right {
+          float: none;
+        }
+      }
+    }
   }
 }
 
