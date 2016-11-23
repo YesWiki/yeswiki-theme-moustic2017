@@ -47,5 +47,18 @@
       </p>
     </div>
   {{linkjavascript}}
+  <script type="text/javascript">
+    var imageIndex = 0;
+    var gallery = document.querySelector("#gallery div.background-image");
+    var listImages = document.querySelectorAll('#gallery ul li img');
+
+    function carousel() {
+      gallery.style.backgroundImage = 'url(' + listImages[imageIndex].src + ')';
+      imageIndex = (imageIndex + 1) % listImages.length;
+      setTimeout(carousel, 10000);
+    }
+
+    carousel();
+  </script>
   </body>
 </html>
