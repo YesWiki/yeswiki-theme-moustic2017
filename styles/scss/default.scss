@@ -70,6 +70,16 @@ body {
   }
 }
 
+#videoIntro {
+  height: 300px;
+  width: 400px;
+  @media screen and (max-width: $media-witdh) {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+  }
+}
+
 .dateHeader {
   color: $moustic-blue;
 }
