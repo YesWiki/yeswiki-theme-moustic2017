@@ -230,12 +230,15 @@ body {
 
 nav {
   padding-left: 30px;
+  width: 100%;
   background-color: $moustic-grey;
 
   ul {
     display: flex;
-    flex-direction: row;
     width: 100%;
+    justify-content: center;
+    flex-direction: row;
+
     font-size: calc(16px + 1vw);
 
     .caret {
@@ -359,9 +362,10 @@ nav {
 }
 
 #page {
-  padding-left: 30px;
+  margin: auto;
   font-size: calc(12px + 0.5vw);
-  max-width: 35em;
+  width: 36em;
+  padding: 10px;
   margin-bottom: 30px;
 
   h1 {
