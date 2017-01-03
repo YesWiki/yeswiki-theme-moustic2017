@@ -358,6 +358,32 @@ nav {
   }
 }
 
+#page {
+  padding-left: 30px;
+  font-size: calc(12px + 0.5vw);
+  max-width: 35em;
+  margin-bottom: 30px;
+
+  h1 {
+    color: $moustic-blue;
+    font-size: 300%;
+  }
+
+  h2 {
+    color: $moustic-grey;
+  }
+
+  a {
+    color: $moustic-orange;
+  }
+
+  .well {
+    background: $moustic-green;
+    border-radius: 0;
+    font-size: 125%;
+  }
+}
+
 footer {
   background: $moustic-grey;
   color: white;

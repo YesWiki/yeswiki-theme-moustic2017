@@ -258,6 +258,23 @@ nav {
             background-color: #a07096;
             color: white; }
 
+#page {
+  padding-left: 30px;
+  font-size: calc(12px + 0.5vw);
+  max-width: 35em;
+  margin-bottom: 30px; }
+  #page h1 {
+    color: #5b97d3;
+    font-size: 300%; }
+  #page h2 {
+    color: #636363; }
+  #page a {
+    color: #d2701c; }
+  #page .well {
+    background: #8ba733;
+    border-radius: 0;
+    font-size: 125%; }
+
 footer {
   background: #636363;
   color: white;
