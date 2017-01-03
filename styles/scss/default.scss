@@ -5,8 +5,12 @@
  */
 
 $moustic-blue: #5b97d3;
-$moustic-grey: #58585a;
-$moustic-green: #cbde43;
+$moustic-grey: #636363;
+$moustic-green: #8ba733;
+$moustic-orange: #d2701c;
+$moustic-purple: #a07096;
+$moustic-background: white;
+
 $media-witdh: 1024px;
 
 * { box-sizing: border-box; }
@@ -224,6 +228,136 @@ body {
   }
 }
 
+nav {
+  padding-left: 30px;
+  background-color: $moustic-grey;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: calc(16px + 1vw);
+
+    .caret {
+      display: none;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      ul {
+        background: $moustic-background;
+
+      }
+    }
+
+    li.open:nth-child(1) > a:focus,
+    li:nth-child(1) > a:hover {
+      background-color: white;
+      color: $moustic-green
+    }
+
+    li:nth-child(1) {
+      background: $moustic-green;
+      ul {
+        border-radius: 0;
+        border: solid 1px $moustic-green;
+        border-top: none;
+        box-shadow: none;
+        margin-left: -1px;
+        li {
+          background-color: transparent !important;
+          a {
+            color: $moustic-green;
+          }
+          a:hover, a.active-link, a.active-link:hover {
+            background-color: $moustic-green;
+            color: white;
+          }
+        }
+      }
+    }
+
+    li.open:nth-child(2) > a:focus, li:nth-child(2) > a:hover {
+      background-color: white;
+      color: $moustic-orange;
+    }
+
+    li:nth-child(2) {
+      background: $moustic-orange;
+      ul {
+        border-radius: 0;
+        border: solid 1px $moustic-orange;
+        border-top: none;
+        box-shadow: none;
+        margin-left: -1px;
+        li {
+          background-color: transparent !important;
+          a {
+            color: $moustic-orange;
+          }
+          a:hover, a.active-link, a.active-link:hover {
+            background-color: $moustic-orange;
+            color: white;
+          }
+        }
+      }
+    }
+
+    li.open:nth-child(3) > a:focus, li:nth-child(3) > a:hover {
+      background-color: white;
+      color: $moustic-blue;
+    }
+
+    li:nth-child(3) {
+      background: $moustic-blue;
+      ul {
+        border-radius: 0;
+        border: solid 1px $moustic-blue;
+        border-top: none;
+        box-shadow: none;
+        margin-left: -1px;
+        li {
+          background-color: transparent !important;
+          a {
+            color: $moustic-blue;
+          }
+          a:hover, a.active-link, a.active-link:hover {
+            background-color: $moustic-blue;
+            color: white;
+          }
+        }
+      }
+    }
+
+    li.open:nth-child(4) > a:focus, li:nth-child(4) > a:hover {
+      background-color: white;
+      color: $moustic-purple;
+    }
+
+    li:nth-child(4) {
+      background: $moustic-purple;
+      ul {
+        border-radius: 0;
+        border: solid 1px $moustic-purple;
+        border-top: none;
+        box-shadow: none;
+        margin-left: -1px;
+        li {
+          background-color: transparent !important;
+          a {
+            color: $moustic-purple;
+          }
+          a:hover, a.active-link, a.active-link:hover {
+            background-color: $moustic-purple;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   background: $moustic-grey;
   color: white;
@@ -240,7 +374,6 @@ footer {
 
   div.span4:nth-child(3) {
     text-align: right;
-
   }
 
   textarea {
