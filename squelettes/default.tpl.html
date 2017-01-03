@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="{{configuration param=" lang"}}">
+  <head>
+    <meta charset="{{configuration param=" charset"}}">
+    {{metarobots}}
+    <meta name="keywords" content="{{configuration param=" meta_keywords"}}"/>
+    <meta name="description" content="{{configuration param=" meta_description"}}"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>{{configuration param="wakka_name"}}
+      :
+      {{currentpage}}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{configuration param=" theme_path"}}images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="{{configuration param=" theme_path"}}images/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" href="{{configuration param=" theme_path"}}images/favicon.png"/>
+    {{linkstyle}}
+    {{linkrss}}
+  </head>
+  <body {{parambody}}>
+    <div id="header" role="banner">
+      <img src="themes/moustic/images/logo-moustic-2017.png" role="logo">
+      <p class="dateHeader">29 au 31 mars 2017</p>
+    </div>
+    <nav role="navigation">
+      {{include page="PageMenuHaut" doubleclic="1" actif="1"}}
+    </nav>
+    <div id="page" role="main">
+      {WIKINI_PAGE}
+    </div>
+    <footer>
+      {{include page="PageFooter" doubleclic="1" actif="1"}}
+    </footer>
+    <div id="notice">
+      <p>Tous les contenus de ce site sont  disponibles en licence <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+        Commons BY SA</a>.
+      </p>
+    </div>
+  {{linkjavascript}}
+  <script type="text/javascript">
+    var imageIndex = 0;
+    var gallery = document.querySelector("#gallery div.background-image");
+    var listImages = document.querySelectorAll('#gallery ul li img');
+
+    function carousel() {
+      gallery.style.backgroundImage = 'url(' + listImages[imageIndex].src + ')';
+      imageIndex = (imageIndex + 1) % listImages.length;
+      setTimeout(carousel, 10000);
+    }
+
+    carousel();
+  </script>
+  </body>
+</html>
