@@ -272,7 +272,8 @@ nav {
 #page {
   font-size: calc(10px + 0.5vw);
   padding: 10px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  height: auto; }
   #page h1 {
     color: #5b97d3;
     font-size: 300%; }
