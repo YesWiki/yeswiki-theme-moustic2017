@@ -246,6 +246,7 @@ nav {
   width: 100%;
   background-color: $moustic-grey;
   height: auto;
+  overflow: visible;
   ul {
     display: flex;
     width: 100%;
@@ -263,7 +264,6 @@ nav {
       text-decoration: none;
       ul {
         background: $moustic-background;
-
       }
     }
 
