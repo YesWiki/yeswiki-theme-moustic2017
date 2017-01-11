@@ -27,7 +27,7 @@ body {
     );
 }
 
-#header, #description, #menu, #news, #twitter, #gallery, #partner, footer, #page, nav, #notice {
+#header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
   height: 300px;
   overflow: hidden;
   background: white;
@@ -37,6 +37,15 @@ body {
     max-width: 100%;
   }
 }
+
+#page, nav, #notice {
+  background: white;
+  @media screen and (max-width: $media-witdh) {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 
 #header.default, footer.default, nav, #page, #notice.default {
   width: 100%;
@@ -247,13 +256,28 @@ nav {
   background-color: $moustic-grey;
   height: auto;
   overflow: visible;
+
+  @media screen and (max-width: $media-witdh) {
+    padding-left: 0;
+
+    .navbar-nav {
+      margin: 0;
+    }
+  }
+
   ul {
     display: flex;
     width: 100%;
     justify-content:flex-start;
     flex-direction: row;
-
     font-size: calc(16px + 1vw);
+
+    @media screen and (max-width: $media-witdh) {
+      flex-direction: column;
+      li {
+        text-align: center;
+      }
+    }
 
     .caret {
       display: none;
@@ -285,6 +309,9 @@ nav {
           background-color: transparent !important;
           a {
             color: $moustic-green;
+            @media screen and (max-width: $media-witdh) {
+              color: white;
+            }
           }
           a:hover, a.active-link, a.active-link:hover {
             background-color: $moustic-green;
@@ -311,6 +338,9 @@ nav {
           background-color: transparent !important;
           a {
             color: $moustic-orange;
+            @media screen and (max-width: $media-witdh) {
+              color: white;
+            }
           }
           a:hover, a.active-link, a.active-link:hover {
             background-color: $moustic-orange;
@@ -337,6 +367,9 @@ nav {
           background-color: transparent !important;
           a {
             color: $moustic-blue;
+            @media screen and (max-width: $media-witdh) {
+              color: white;
+            }
           }
           a:hover, a.active-link, a.active-link:hover {
             background-color: $moustic-blue;
@@ -363,6 +396,9 @@ nav {
           background-color: transparent !important;
           a {
             color: $moustic-purple;
+            @media screen and (max-width: $media-witdh) {
+              color: white;
+            }
           }
           a:hover, a.active-link, a.active-link:hover {
             background-color: $moustic-purple;
@@ -380,6 +416,9 @@ nav {
   padding-left: 30px;
   height: auto;
 
+  @media screen and (max-width: $media-witdh) {
+    font-size: calc(16px + 0.5vw);
+  }
 
   h1 {
     color: $moustic-blue;

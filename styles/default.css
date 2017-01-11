@@ -12,14 +12,21 @@ body {
   flex-direction: column;
   background: linear-gradient(to bottom right, #5b97d3, #8ba733); }
 
-#header, #description, #menu, #news, #twitter, #gallery, #partner, footer, #page, nav, #notice {
+#header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
   height: 300px;
   overflow: hidden;
   background: white; }
   @media screen and (max-width: 1024px) {
-    #header, #description, #menu, #news, #twitter, #gallery, #partner, footer, #page, nav, #notice {
+    #header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
       height: auto;
       min-height: 300px;
+      max-width: 100%; } }
+
+#page, nav, #notice {
+  background: white; }
+  @media screen and (max-width: 1024px) {
+    #page, nav, #notice {
+      height: auto;
       max-width: 100%; } }
 
 #header.default, footer.default, nav, #page, #notice.default {
@@ -182,12 +189,22 @@ nav {
   background-color: #636363;
   height: auto;
   overflow: visible; }
+  @media screen and (max-width: 1024px) {
+    nav {
+      padding-left: 0; }
+      nav .navbar-nav {
+        margin: 0; } }
   nav ul {
     display: flex;
     width: 100%;
     justify-content: flex-start;
     flex-direction: row;
     font-size: calc(16px + 1vw); }
+    @media screen and (max-width: 1024px) {
+      nav ul {
+        flex-direction: column; }
+        nav ul li {
+          text-align: center; } }
     nav ul .caret {
       display: none; }
     nav ul li a {
@@ -211,6 +228,9 @@ nav {
           background-color: transparent !important; }
           nav ul li:nth-child(1) ul li a {
             color: #8ba733; }
+            @media screen and (max-width: 1024px) {
+              nav ul li:nth-child(1) ul li a {
+                color: white; } }
           nav ul li:nth-child(1) ul li a:hover, nav ul li:nth-child(1) ul li a.active-link, nav ul li:nth-child(1) ul li a.active-link:hover {
             background-color: #8ba733;
             color: white; }
@@ -229,6 +249,9 @@ nav {
           background-color: transparent !important; }
           nav ul li:nth-child(2) ul li a {
             color: #d2701c; }
+            @media screen and (max-width: 1024px) {
+              nav ul li:nth-child(2) ul li a {
+                color: white; } }
           nav ul li:nth-child(2) ul li a:hover, nav ul li:nth-child(2) ul li a.active-link, nav ul li:nth-child(2) ul li a.active-link:hover {
             background-color: #d2701c;
             color: white; }
@@ -247,6 +270,9 @@ nav {
           background-color: transparent !important; }
           nav ul li:nth-child(3) ul li a {
             color: #5b97d3; }
+            @media screen and (max-width: 1024px) {
+              nav ul li:nth-child(3) ul li a {
+                color: white; } }
           nav ul li:nth-child(3) ul li a:hover, nav ul li:nth-child(3) ul li a.active-link, nav ul li:nth-child(3) ul li a.active-link:hover {
             background-color: #5b97d3;
             color: white; }
@@ -265,6 +291,9 @@ nav {
           background-color: transparent !important; }
           nav ul li:nth-child(4) ul li a {
             color: #a07096; }
+            @media screen and (max-width: 1024px) {
+              nav ul li:nth-child(4) ul li a {
+                color: white; } }
           nav ul li:nth-child(4) ul li a:hover, nav ul li:nth-child(4) ul li a.active-link, nav ul li:nth-child(4) ul li a.active-link:hover {
             background-color: #a07096;
             color: white; }
@@ -274,6 +303,9 @@ nav {
   padding: 10px;
   padding-left: 30px;
   height: auto; }
+  @media screen and (max-width: 1024px) {
+    #page {
+      font-size: calc(16px + 0.5vw); } }
   #page h1 {
     color: #5b97d3;
     font-size: 300%; }
