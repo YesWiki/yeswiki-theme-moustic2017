@@ -9,16 +9,23 @@
 body {
   background: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #5b97d3, #8ba733); }
 
-#header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
+#header, #description, #menu, #news, #twitter, #gallery, #partner, footer, #page, nav, #notice {
   height: 300px;
-  overflow: hidden; }
+  overflow: hidden;
+  background: white; }
   @media screen and (max-width: 1024px) {
-    #header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
+    #header, #description, #menu, #news, #twitter, #gallery, #partner, footer, #page, nav, #notice {
       height: auto;
       min-height: 300px;
       max-width: 100%; } }
+
+#header.default, footer.default, nav, #page, #notice.default {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
 
 #header {
   align-items: center;
@@ -172,11 +179,12 @@ body {
 nav {
   padding-left: 30px;
   width: 100%;
-  background-color: #636363; }
+  background-color: #636363;
+  height: auto; }
   nav ul {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     font-size: calc(16px + 1vw); }
     nav ul .caret {
@@ -261,11 +269,9 @@ nav {
             color: white; }
 
 #page {
-  margin: auto;
-  font-size: calc(12px + 0.5vw);
-  width: 36em;
+  font-size: calc(10px + 0.5vw);
   padding: 10px;
-  margin-bottom: 30px; }
+  padding-left: 30px; }
   #page h1 {
     color: #5b97d3;
     font-size: 300%; }
@@ -311,7 +317,8 @@ footer {
           float: none; } }
 
 #notice {
-  text-align: center; }
+  text-align: center;
+  height: auto; }
 
 @keyframes IconHover {
   from {

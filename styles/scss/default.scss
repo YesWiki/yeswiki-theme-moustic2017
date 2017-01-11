@@ -19,16 +19,29 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
+  background:
+    linear-gradient(
+      to bottom right,
+      $moustic-blue,
+      $moustic-green
+    );
 }
 
-#header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
+#header, #description, #menu, #news, #twitter, #gallery, #partner, footer, #page, nav, #notice {
   height: 300px;
   overflow: hidden;
+  background: white;
   @media screen and (max-width: $media-witdh) {
     height: auto;
     min-height: 300px;
     max-width: 100%;
   }
+}
+
+#header.default, footer.default, nav, #page, #notice.default {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #header {
@@ -232,11 +245,11 @@ nav {
   padding-left: 30px;
   width: 100%;
   background-color: $moustic-grey;
-
+  height: auto;
   ul {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content:flex-start;
     flex-direction: row;
 
     font-size: calc(16px + 1vw);
@@ -362,11 +375,10 @@ nav {
 }
 
 #page {
-  margin: auto;
-  font-size: calc(12px + 0.5vw);
-  width: 36em;
+  font-size: calc(10px + 0.5vw);
   padding: 10px;
-  margin-bottom: 30px;
+  padding-left: 30px;
+
 
   h1 {
     color: $moustic-blue;
@@ -439,6 +451,7 @@ footer {
 
 #notice {
   text-align: center;
+  height: auto;
 }
 
 @keyframes IconHover {
