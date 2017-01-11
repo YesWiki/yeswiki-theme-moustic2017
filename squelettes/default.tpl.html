@@ -25,8 +25,9 @@
     <nav role="navigation">
       {{include page="PageMenuHaut" doubleclic="1" actif="1"}}
     </nav>
-    <div id="page" role="main">
+    <div id="page" role="main" {{doubleclic}}>
       {WIKINI_PAGE}
+      {{barreredaction}}
     </div>
     <footer class="default">
       {{include page="PageFooter" doubleclic="1" actif="1"}}
