@@ -49,7 +49,7 @@ body {
 
 #header.default, footer.default, nav, #page, #notice.default {
   width: 100%;
-  max-width: 1200px;
+  max-width: 970px;
   margin: auto;
 }
 
@@ -270,7 +270,7 @@ nav {
     width: 100%;
     justify-content:flex-start;
     flex-direction: row;
-    font-size: calc(16px + 1vw);
+    font-size: 24px;
 
     @media screen and (max-width: $media-witdh) {
       flex-direction: column;
@@ -411,9 +411,10 @@ nav {
 }
 
 #page {
-  font-size: calc(10px + 0.5vw);
+  font-size: 16px;
   padding: 10px;
   padding-left: 30px;
+  padding-right: 150px;
   height: auto;
 
   @media screen and (max-width: $media-witdh) {
@@ -422,11 +423,29 @@ nav {
 
   h1 {
     color: $moustic-blue;
-    font-size: 300%;
+    font-size: 200%;
+    font-weight: bolder;
   }
 
   h2 {
+    color: $moustic-green;
+    font-size: 150%;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  h3 {
     color: $moustic-grey;
+    font-weight: bold;
+    font-size: 125%;
+    margin-left: 30px;
+  }
+
+  h4 {
+    color: $moustic-grey;
+    font-size: 112%;
+    font-weight: lighter;
+    margin-left: 45px;
   }
 
   a {
@@ -461,7 +480,7 @@ nav {
 footer {
   background: $moustic-grey;
   color: white;
-  padding: 0 5%;
+  padding: 0 30px;
   a {
     color: $moustic-green;
   }
