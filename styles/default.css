@@ -317,6 +317,10 @@ nav {
     background: #8ba733;
     border-radius: 0;
     font-size: 125%; }
+  #page a.btn {
+    color: white; }
+  #page li.active a {
+    color: white; }
 
 footer {
   background: #636363;
