@@ -317,8 +317,10 @@ nav {
     background: #8ba733;
     border-radius: 0;
     font-size: 125%; }
-  #page a.btn {
+  #page .btn {
     color: white; }
+  #page .btn-default {
+    color: #333; }
   #page li.active a {
     color: white; }
   #page div.footer {

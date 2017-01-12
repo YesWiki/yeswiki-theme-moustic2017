@@ -439,8 +439,12 @@ nav {
     font-size: 125%;
   }
 
-  a.btn {
+  .btn {
     color: white;
+  }
+
+  .btn-default {
+    color: #333;
   }
 
   li.active {
