@@ -321,6 +321,8 @@ nav {
     color: white; }
   #page li.active a {
     color: white; }
+  #page div.footer {
+    font-size: 80%; }
 
 footer {
   background: #636363;
