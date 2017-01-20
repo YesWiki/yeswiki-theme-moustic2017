@@ -1,7 +1,7 @@
 /* Styles for yeswiki's template
  * Author: Marc Lanssens <marc.lanssens@supagro.fr>
  * Author: Florestan Bredow <florestan.bredow@supagro.fr>
- * under GNU General Public License
+ * under MIT License
  */
 
 $moustic-blue: #5b97d3;
@@ -12,6 +12,20 @@ $moustic-purple: #a07096;
 $moustic-background: white;
 
 $media-witdh: 1024px;
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/Aller_Bd.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/Aller_Rg.woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * { box-sizing: border-box; }
 
@@ -58,8 +72,40 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-size: 300%;
+  font-family: Aller;
+  font-weight: bold;
+  font-size: 225%;
   justify-content: space-around;
+  padding: 30px;
+  div {
+    flex-basis: 50%;
+    text-align: center;
+    @media screen and (max-width: $media-witdh) {
+      flex-basis: auto;
+    }
+  }
+
+  .date {
+    color: $moustic-blue;
+    text-align: left;
+    font-size: 80%;
+  }
+  .title {
+    text-align: left;
+    color: $moustic-orange;
+    margin-bottom: 0;
+  }
+  .subTitle {
+    text-align: right;
+    color: $moustic-grey;
+    font-size: 50%
+  }
+
+  @media screen and (max-width: $media-witdh) {
+    img[role=logo] {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 #description {
@@ -252,6 +298,7 @@ body {
 }
 
 nav {
+  font-family: Aller;
   padding-left: 30px;
   width: 100%;
   background-color: $moustic-grey;
@@ -425,7 +472,8 @@ nav {
   h1 {
     color: $moustic-blue;
     font-size: 200%;
-    font-weight: bolder;
+    font-family: Aller;
+    font-weight: bold;
   }
 
   h2 {
