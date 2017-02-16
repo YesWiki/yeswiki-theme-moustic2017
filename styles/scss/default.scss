@@ -52,6 +52,11 @@ body {
   }
 }
 
+#partner {
+  height: auto;
+  min-height: 300px;
+}
+
 #page, nav, #notice {
   background: white;
   @media screen and (max-width: $media-witdh) {
