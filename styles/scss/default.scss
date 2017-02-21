@@ -41,7 +41,7 @@ body {
     );
 }
 
-#header, #description, #menu, #news, #twitter, #gallery, #partner, footer {
+#header, #description, #menu, #news1, #news2, #news3, #twitter, #gallery, #partner, footer {
   height: 300px;
   overflow: hidden;
   background: white;
@@ -222,7 +222,7 @@ body {
   }
 }
 
-#news {
+#news1, #news2, #news3 {
   color: white;
   font-size: 100%;
   span.date {
@@ -235,6 +235,10 @@ body {
   .background-image {
     background-size: cover;
   }
+}
+
+#news2 {
+  color: black;
 }
 
 #twitter {
